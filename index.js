@@ -60,4 +60,4 @@ bot.on("message", async message => {
         console.log("debug");
     }
 })
-bot.login('NDA5MDI4OTAzMDM0ODE0NDc0.DV019w.LzXiW6ivvZ78HdrmB6KaV9MWxpM');
+bot.login('NDA5MDI4OTAzMDM0ODE0NDc0.DV87zg.LJuC9ABhdV5bB0EaAstfMD4scVA');
