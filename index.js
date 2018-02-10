@@ -47,17 +47,17 @@ bot.on("message", async message => {
         .addField("Server Info: ", '**b.server** (Posts basic server info)')
         .addField("Ban: ", '**b.ban** (Only can be used by a user with admin powers *MUST ADD A REASON AFTER THE @user*)')
         .addField("Kick: ", '**b.kick** (Only can be used by a user with mod powers *MUST ADD A REASON AFTER THE @user*')
+        .addField("Server Mute", '**b.mute** (Sets a temp mute for the user specified)')
         .addBlankField()
         .addField("Hello", '**b.hello** (Posts Hello!)')
-        .addField("Gmhus", '**b.gmhus** (gmhus)');
+        .addField("Gmhus", '**b.gmhus** (gmhus)')
+        .addField("8 Ball", '**b.8ball** (:eyes:)');
 
 
-        return message.author.sendMessage(commandEmbed);
-        return message.channel.send("debug");
+        return message.author.send(commandEmbed);
     }
 
-    if (oldMember.voiceChannelID !== newMember.voiceChannelID) {
-        console.log("debug");
-    }
-})
-bot.login('NDA5MDI4OTAzMDM0ODE0NDc0.DV87zg.LJuC9ABhdV5bB0EaAstfMD4scVA');
+    // if (oldMember.voiceChannelID !== newMember.voiceChannelID) {
+    //     console.log("debug");
+    // }
+});
